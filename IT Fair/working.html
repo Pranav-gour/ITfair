@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Quantum Computers Work</title>
+    <link rel="shortcut icon" href="1674127388.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="img">
+        WORKING OF QUANTUM COMPUTERS
+    </div>
+    <div class="def">
+        <h2>How does a quantum computer work?</h2>
+        <p>
+           The fundamental building blocks of a quantum computer are called Quantum Bits or Qubits. These Qubits are different from bits as the can exist in two states at the same time. This poperty of Qubits is called Superposition.
+           A Qubit is represented by a sperical diagram with an arrow, also called a Bloch Sphere. The arrow, which is basically the direction of the quantum particle in a electron, is fixed at one point in the center of the 3D grid and its other end moves freely around the 3D grid in a Bloch Sphere.
+           The state of the Qubit is determined by calculating the probabilty of the direction that the arrow being closer to either the state of 1 or the state of 0. However, if multiple qubits are kept close to each other, then the probability of 1 qubit can influence the probabality of all the qubits around it.
+           This property of a qubit is known as Entanglement.
+           Qubits are fundamentally known as quantum wavefunctions. When we combine different wavefunctions, we get and overall wave where the individual wavefunctions have either combined to form a bigger wave or cancel each other out. However, even though these quantum entities can exist in millions of states at a time, 
+           there is only one output. This property is known as Interference. So, while performing a mathematical statement, the wavefunctions will use constructive interfernece to increase the probability of the correct answer. 
+        </p>
+    </div>
+    <button><a href="home.html">< HOME</a></button>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Teko&family=Ubuntu&display=swap');
+        body{
+            background-color: #333;
+        }
+        .img{
+            background-image: url(working.jpg);
+            width: 100%;
+            height: 500px;
+            top: 0;
+            left: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: coral;
+            font-weight: bolder;
+            border-radius: 20px;
+        }
+        .def h2{
+            text-align: left;
+            color: #1F282D;
+            font-family: 'Teko', sans-serif;
+            font-size: 65px;
+            justify-content: center;
+            padding: 30px;
+            line-height: 85px;
+        }
+        .def p{
+            text-align: left;
+            color: slateblue;
+            font-family: 'Teko', sans-serif;
+            font-size: 30px;
+            padding: 30px;
+        }
+        .def{
+            display: grid;
+            background-color: aliceblue;
+            border-radius: 10px;
+            margin: 50px;
+        }
+        .def h2::after{
+            content: '';
+            height: 2px;
+            width: 0%;
+            background-color: #1F282D;
+            display: block;
+            transition: 0.8s;
+        }
+        .def h2:hover::after{
+            content: '';
+            height: 2px;
+            width: 69%;
+            background-color: #1F282D;
+            display: block;
+            cursor: pointer;
+        }
+        button{
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+            background-image: linear-gradient(90deg, red, blue);
+            color: white;
+            width: 200px;
+            height: 80px;
+            font-size: 30px;
+            letter-spacing: 3px;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+</body>
+</html>

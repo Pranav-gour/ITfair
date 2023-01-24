@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making of Quantum Computers</title>
+    <link rel="shortcut icon" href="1674127388.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="img">
+        MAKING OF QUANTUM COMPUTERS
+    </div>
+    <div class="box" data-hover="A superconductor is defined as a substance that offers no resistance to the electric current when it becomes colder than a critical temperature.">
+        SUPERCONDUCTOR
+    </div>
+    <div>
+        <h2 class="h21">Superconducting Quantum Computers</h2>
+        <p>
+            Superconducting Quantum Computers are currently the most popular approach for making Quantum Computers.
+            They consist of Superconducting Qubits which are made up of Superconducting Wires with breaks in the Superconductor known as Josephson Junction.
+            The most popular type of Superconducting Qubit is called a Transmon Qubit, where the 2 energy level system is encoded in pairs of electric charge, moving across the junction, 
+            specifically the frequency at which charges oscillate back and forth across the junction.
+        </p>
+        <div class="def">
+            <h2 class="h22">Superconducting Materials</h2>
+            <ul class="ul">
+                <li>Niobium</li>
+                <li>Mercury</li>
+                <li>Lead</li>
+                <li>Technetium</li>
+                <li>Carbon Nanotubes (Organic Material)</li>
+            </ul>
+        </div>
+    </div>
+    <button><a href="home.html">< HOME</a></button>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko&family=Ubuntu&display=swap');
+        body{
+            background-color: #333;
+        }
+        .img{
+            background-image: url(making.jpg);
+            width: 100%;
+            height: 500px;
+            top: 0;
+            left: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ff5349;
+            font-weight: bolder;
+            border-radius: 20px;
+        }
+        .box{
+            height: 150px;
+            width: 250px;
+            background-color: #132848;
+            color: white;
+            font-family: 'Teko', sans-serif;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 20px;
+            margin: 25px;
+            transition: 0.6s;
+        }
+        .box:hover{
+            color: black;
+            background-color: powderblue;
+            width: 700px;
+            font-size: 0;
+            cursor: pointer;
+
+        }
+        .box:hover::after{
+            font-size: 30px;
+            content: attr(data-hover);
+        }
+        .h21{
+            font-family: 'Teko', sans-serif;
+            color: powderblue;
+            font-size: 40px;
+            letter-spacing: 2.5px;
+            margin-left: 30px;
+        }
+        .h21::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background-color: powderblue;
+            display: block;
+            transition: 0.8s;
+        }
+        .h21:hover::after{
+            content: '';
+            height: 3px;
+            width: 43.5%;
+            background-color: powderblue;
+            display: block;
+            cursor: pointer;
+        }
+        div p{
+            font-family: 'Teko', sans-serif;
+            color: powderblue;
+            font-size: 25px;
+            letter-spacing: 0;
+            margin-left: 30px;
+        }
+        .h22{
+            font-family: 'Ubuntu', sans-serif;
+            color: #1e1f22;
+            font-size: 40px;
+            letter-spacing: 2.5px;
+            line-height: 70px;
+        }
+        .h22::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background-color: #1e1f22;
+            display: block;
+            transition: 0.8s;
+        }
+        .h22:hover::after{
+            content: '';
+            height: 3px;
+            width: 48%;
+            background-color: #1e1f22;
+            display: block;
+            cursor: pointer;
+        }
+        .def{
+            display: grid;
+            background-color: aliceblue;
+            border-radius: 20px;
+            padding: 30px;
+            margin-left: 10px;
+        }
+        .ul{
+            font-family: 'Ubuntu', sans-serif;
+            color: #1e1f22;
+            font-size: 25px;
+            letter-spacing: 2.5px;
+            line-height: 50px;
+        }
+        button{
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+            background-image: linear-gradient(90deg, red, blue);
+            color: white;
+            width: 200px;
+            height: 80px;
+            font-size: 30px;
+            letter-spacing: 3px;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+</body>
+</html>
